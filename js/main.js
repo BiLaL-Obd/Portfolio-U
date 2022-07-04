@@ -159,10 +159,31 @@ function manageSkill() {
     .forEach((ele) => ele.classList.add("active"));
 }
 // loading
-// function loader() {
-//   document.querySelector(".loading").classList.add("fade-out");
-// }
-// function fadeout() {
-//   setInterval(loader, 3000);
-// }
-// window.onload = fadeout;
+function loader() {
+  document.querySelector(".loading").classList.add("fade-out");
+}
+function fadeout() {
+  setInterval(loader, 3000);
+}
+window.onload = fadeout;
+
+// Typing Script
+const typed = new Typed(".typing", {
+  strings: ["Web Developer", "FrontEnd Developer", "IT"],
+  typeSpeed: 60,
+  backSpeed: 30,
+  loop: true,
+});
+
+// Jquery For Progress Language
+$(function () {
+  $(".chart").easyPieChart({
+    size: 80,
+    barColor: "#7a7a7a",
+    scaleColor: false,
+    lineWidth: 6,
+    trackColor: "#101010",
+    lineCap: "circle",
+    animate: 1100,
+  });
+});
