@@ -269,6 +269,11 @@ header .navigation a.active {
     padding: 0 50px;
   }
 }
+@media (max-width: 767px) {
+  .landing .content {
+    padding: 0 15px;
+  }
+}
 .landing .info {
   width: 470px;
   max-width: 100%;
@@ -309,6 +314,11 @@ header .navigation a.active {
 @media (max-width: 991px) {
   .landing .info p {
     margin: 50px 0;
+  }
+}
+@media (max-width: 767px) {
+  .landing .info p {
+    margin: 20px 0;
   }
 }
 .landing .info a {

@@ -171,7 +171,7 @@ window.onload = fadeout;
 const typed = new Typed(".typing", {
   strings: ["Web Developer", "FrontEnd Developer", "IT"],
   typeSpeed: 60,
-  backSpeed: 30,
+  backSpeed: 40,
   loop: true,
 });
 
