@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -67,24 +68,58 @@
     <!-- End header -->
     <!-- Start Landing Section -->
     <section class="landing active" id="home">
-      <div class="content">
-        <div class="info">
-          <h1>
-            Hello My Name Is <span>Bilal Obeid</span><br />I'm a
-            <span class="typing"></span>
-          </h1>
-          <p>
-            Seeking A Challenging Position With A Prominent Organization In
-            Which I Could Use My Solid Experience, Academic Knowledge And
-            Communication Skills To Contribute Towards The Development Of The
-            Organization While Offering Strategic Approaches To Long-Term Goals
-            And Problems.
-          </p>
-          <a href="file/BilaCv.pdf" download="file/BilaCv.pdf">Download CV</a>
+      <div class="container landing-swiper swiper">
+        <div class="slide swiper-wrapper">
+          <div class="content swiper-slide">
+            <div class="info">
+              <h1>
+                Hello My Name Is <span>Bilal Obeid</span><br />I'm a
+                <span class="typing"></span>
+              </h1>
+              <p>
+                Seeking A Challenging Position With A Prominent Organization In
+                Which I Could Use My Solid Experience, Academic Knowledge And
+                Communication Skills To Contribute Towards The Development Of The
+                Organization While Offering Strategic Approaches To Long-Term Goals
+                And Problems.
+              </p>
+              <a href="file/BilaCv.pdf" download="file/BilaCv.pdf">Download CV</a>
+            </div>
+            <div class="image">
+              <img src="images/myphoto.jpg" alt="" />
+            </div>
+          </div>
+          <div class="update swiper-slide">
+            <h2 class="main-title">What's New</h2>
+            <div class="update-box">
+              <div class="box">
+                <h3>
+                  <a href="#">Earn New Skills </a>
+                </h3>
+                <p>
+                  I Studied New Skills For FrontEnd Likes FrameWork Bootstrap - SASS & PlugJs To Easier My Work
+                </p>
+              </div>
+              <div class="box">
+                <h3>
+                  <a href="#">Add New Part Skills </a>
+                </h3>
+                <p>
+                  I Designed New Part To Now My Progress Skills Like FrontEnd Skills & FrameWork Skills
+                </p>
+              </div>
+              <div class="box">
+                <h3><a href="https://bilal-obd.github.io/Ket-Template/" target="_blank">Add New Portfolio Project (Ket)</a></h3>
+                <p>I Designed New Project Name's Ket Template With Languages (HTML - Css - Bootstrap & JavaScript)</p>
+              </div>  
+              <div class="box">
+                <h3><a href="https://bilal-obd.github.io/Moderno-Template/" target="_blank">Add New Portfolio Project (Moderno)</a></h3>
+                <p>I Designed New Project Name's Moderno Template With Languages (HTML - Css - Bootstrap - SASS & JavaScript)</p>
+              </div>  
+            </div>          
+          </div>
         </div>
-        <div class="image">
-          <img src="images/myphoto.jpg" alt="" />
-        </div>
+        <div class="swiper-pagination"></div>
       </div>
     </section>
     <!-- End Landing Section -->
@@ -295,7 +330,7 @@
     <section class="portfolio" id="portfolio">
       <div class="container">
         <h3 class="main-title">Portfolio</h3>
-        <div class="old">
+        <div class="css">
           <h3 class="title">Old Project : <span>HTML & CSS</span></h3>
           <div class="content">
             <div class="box">
@@ -360,7 +395,7 @@
             </div>
           </div>
         </div>
-        <div class="last">
+        <div class="javascript">
           <h3 class="title">
             Last Project : <span>HTML - CSS & JavaScript</span>
           </h3>
@@ -427,7 +462,7 @@
             </div>
           </div>
         </div>
-        <div class="new">
+        <div class="bootstrap">
           <h3 class="title">
             Project With FrameWorks :
             <span>HTML - Bootstrap - CSS & JavaScript</span>
@@ -468,6 +503,34 @@
                 <p>My Work:</p>
                 <a
                   href="https://bilal-obd.github.io/Ket-Template/"
+                  target="_blank"
+                  >View Work</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="scss">
+          <h3 class="title">
+            Project With FrameWorks :
+            <span>HTML - Bootstrap - CSS - SASS & JavaScript</span>
+          </h3>
+          <div class="content">
+            <div class="box" id="sass-project">
+              <div class="image">
+                <img src="images/moderno.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>Moderno Template</h3>
+                <p>PSD Link:</p>
+                <a
+                  href="https://www.graphberry.com/item/moderno-creative-simpleportfolio-page?ref=similar"
+                  target="_blank"
+                  >View Source</a
+                >
+                <p>My Work:</p>
+                <a
+                  href="https://bilal-obd.github.io/Moderno-Template/"
                   target="_blank"
                   >View Work</a
                 >
@@ -571,6 +634,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="jqueryPath/jquery.easypiechart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

@@ -187,3 +187,18 @@ $(function () {
     animate: 1100,
   });
 });
+
+// Swiper
+var swiper = new Swiper(".landing-swiper", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
