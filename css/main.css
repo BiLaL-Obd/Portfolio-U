@@ -740,7 +740,7 @@ header .navigation a.active {
 .skills .content {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   gap: 40px;
   flex-wrap: wrap;
   margin: 30px auto;
