@@ -258,8 +258,21 @@ header .navigation a.active {
     padding: 50px 8px;
   }
 }
+@media (max-width: 767px) {
+  .landing {
+    padding: 0 8px;
+  }
+}
 .landing .slide {
   cursor: grab;
+}
+.landing .container {
+  height: 80vh;
+}
+@media (max-width: 767px) {
+  .landing .container {
+    height: 90vh;
+  }
 }
 .landing .content {
   display: flex;
@@ -291,6 +304,7 @@ header .navigation a.active {
   line-height: 1.8;
   font-size: 35px;
   user-select: none;
+  margin: 0;
 }
 @media (max-width: 767px) {
   .landing .info h1 {
@@ -380,21 +394,15 @@ header .navigation a.active {
 .landing .image img {
   width: 100%;
 }
+.landing .update {
+  padding: 50px 0;
+}
 .landing .update .box {
   background-color: var(--bar-color);
   padding: 20px 10px;
   border-radius: 4px;
   border: 1px solid var(--black-color);
-}
-.landing .update-box {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-  gap: 30px;
-}
-@media (max-width: 767px) {
-  .landing .update-box {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  }
+  margin: 15px 0;
 }
 .landing .update .image {
   width: 300px;
@@ -671,7 +679,7 @@ header .navigation a.active {
   transition: 0.5s;
 }
 .portfolio .content .box:hover .image {
-  right: -200%;
+  right: -300%;
 }
 .portfolio .content .box .image img {
   width: 100%;
