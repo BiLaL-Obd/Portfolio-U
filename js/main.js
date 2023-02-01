@@ -158,6 +158,15 @@ function manageSkill() {
     .querySelectorAll(this.dataset.skill)
     .forEach((ele) => ele.classList.add("active"));
 }
+
+// Number of box skills
+let frontnb = document.querySelector('.frontnb');
+let frontend = document.querySelector('.frontend')
+frontnb.innerHTML=frontend.childElementCount
+let framenb = document.querySelector('.framenb');
+let framework = document.querySelector('.framework')
+framenb.innerHTML=framework.childElementCount
+
 // loading
 function loader() {
   document.querySelector(".loading").classList.add("fade-out");
