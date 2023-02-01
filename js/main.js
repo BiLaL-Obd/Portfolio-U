@@ -163,7 +163,7 @@ function loader() {
   document.querySelector(".loading").classList.add("fade-out");
 }
 function fadeout() {
-  setInterval(loader, 3000);
+  setInterval(loader, 2000);
 }
 window.onload = fadeout;
 
