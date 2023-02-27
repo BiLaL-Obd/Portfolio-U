@@ -222,9 +222,11 @@ header .navigation li label {
   border-radius: 4px;
   display: none;
 }
-header .navigation li:hover::before,
-header .navigation li:hover label {
-  display: block;
+@media(min-width:992px) {
+  header .navigation li:hover::before,
+  header .navigation li:hover label {
+    display: block;
+  }
 }
 header .navigation a {
   position: relative;
