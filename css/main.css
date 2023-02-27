@@ -250,26 +250,8 @@ header .navigation a.active {
   padding: var(--main-padding) 0;
   min-height: 100vh;
 }
-@media (max-width: 991px) {
-  .landing {
-    padding: 50px 8px;
-  }
-}
-@media (max-width: 767px) {
-  .landing {
-    padding: 0 8px;
-  }
-}
-.landing .slide {
-  cursor: grab;
-}
 .landing .container {
-  height: 80vh;
-}
-@media (max-width: 767px) {
-  .landing .container {
-    height: 90vh;
-  }
+  height: 100vh;
 }
 .landing .content {
   display: flex;
