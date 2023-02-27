@@ -171,7 +171,6 @@ header {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   padding-top: calc(var(--main-padding) - 10px);
   padding-bottom: 100px;
   transition: var(--main-transition);
@@ -197,6 +196,7 @@ header .logo {
   align-items: center;
   padding-right:4px;
   padding-bottom:2px;
+  margin-bottom: 65px;
 }
 header .navigation li {
   position: relative;
