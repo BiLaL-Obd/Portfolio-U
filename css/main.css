@@ -294,7 +294,6 @@ header .navigation a.active {
 @media (max-width: 991px) {
   .landing .info {
     width: 100%;
-    text-align: center;
   }
 }
 .landing .info h1 {
@@ -348,11 +347,7 @@ header .navigation a.active {
   font-weight: bold;
   transition: var(--main-transition);
 }
-@media (max-width: 991px) {
-  .landing .info a {
-    margin: 0 auto;
-  }
-}
+
 .landing .info a:hover {
   background-color: var(--main-color);
   color: #fff;
@@ -390,28 +385,6 @@ header .navigation a.active {
 }
 .landing .image img {
   width: 100%;
-}
-.landing .update {
-  padding: 50px 0;
-}
-.landing .update .box {
-  background-color: var(--bar-color);
-  padding: 20px 10px;
-  border-radius: 4px;
-  border: 1px solid var(--black-color);
-  margin: 15px 0;
-}
-.landing .update .image {
-  width: 300px;
-  margin-bottom: 10px;
-}
-.landing .update .box h3 a {
-  display: block;
-  margin: 0 0 15px;
-  color: #4790d1;
-}
-.landing .update .box p {
-  line-height: 1.5;
 }
 
 /* End Landing */
@@ -907,28 +880,3 @@ section.active {
 }
 /* End Loading */
 
-/* Start Swiper */
-.swiper-horizontal > .swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal,
-.swiper-pagination-custom,
-.swiper-pagination-fraction {
-  bottom: 0;
-}
-.swiper-pagination-bullet {
-  background: var(--black-color);
-  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-  width: var(
-    --swiper-pagination-bullet-width,
-    var(--swiper-pagination-bullet-size, 10px)
-  );
-  height: var(
-    --swiper-pagination-bullet-height,
-    var(--swiper-pagination-bullet-size, 10px)
-  );
-  opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.6);
-}
-.swiper-pagination-bullet-active {
-  background: var(--main-color);
-  opacity: 1;
-}
-/* End Swiper */
